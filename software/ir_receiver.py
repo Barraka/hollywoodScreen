@@ -25,6 +25,9 @@ class IRReceiver:
             if code is not None:
                 self.hash_to_button[code] = button
 
+        if not self.hash_to_button:
+            print("[IR] WARNING: No IR codes configured. Run learn_remote.py first.")
+
         # Connect to pigpio daemon
         self.pi = pigpio.pi()
         if not self.pi.connected:

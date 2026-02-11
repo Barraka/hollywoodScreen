@@ -40,6 +40,14 @@ All runtime config lives in `software/config.json`:
 - `ir_codes`: learned IR remote hashes (populated by `learn_remote.py`)
 - `rf_signal`: captured RF signal params (populated by `capture_rf.py`)
 
+## Version
+
+- **Prop Version**: 1.1.0
+
+### v1.1.0 — Audit Bug Fix Pass
+- **Crash cleanup**: Added `try/finally` wrapper in `main.py` to ensure GPIO pins and pygame are always cleaned up on exit/crash
+- **IR codes warning**: Added warning log in `ir_receiver.py` when no IR codes are configured (all null in `config.json`)
+
 ## Development Notes
 - White noise uses a small numpy array scaled up 4x for retro TV look + performance on Pi
 - IR receiver uses FNV-1a hashing of pulse timing ratios

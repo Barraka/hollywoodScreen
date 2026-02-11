@@ -234,13 +234,16 @@ class App:
             pygame.display.flip()
             clock.tick(15)
 
-        if self.ir:
-            self.ir.cleanup()
-        if self.rf:
-            self.rf.cleanup()
-        pygame.quit()
+        # Cleanup handled by caller's try/finally
 
 
 if __name__ == "__main__":
     app = App()
-    app.run()
+    try:
+        app.run()
+    finally:
+        if app.ir:
+            app.ir.cleanup()
+        if app.rf:
+            app.rf.cleanup()
+        pygame.quit()
