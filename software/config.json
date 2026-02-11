@@ -1,0 +1,31 @@
+{
+    "secret_code": "1234",
+    "gpio": {
+        "ir_pin": 17,
+        "rf_tx_pin": 27,
+        "rf_rx_pin": 22
+    },
+    "rf_signal": {
+        "code": null,
+        "protocol": null,
+        "pulse_length": null
+    },
+    "ir_codes": {
+        "power": null,
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null
+    },
+    "display": {
+        "width": 1280,
+        "height": 720,
+        "fullscreen": true
+    }
+}

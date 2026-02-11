@@ -1,0 +1,2 @@
+In this project I want to work on an Escape Room prop that I need to build. It's part of the scenario "Mission: Hollywood" that we have been working on. At some point the players are in a cinema room, there's a screen with white noise. They find a remote, they need to press power, and then the white noise stops, a simple message appears "Enterez le code:". With the same TV remote, when they enter the correct 4-digit code, the screen lifts (it's a rollable motorized projector screen).
+I want to build that setup with you.
